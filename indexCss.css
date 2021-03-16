@@ -15,6 +15,10 @@ body{
   
 
 }
+#display{
+    font-size: 23px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
 .display{
     width: 70%;
     height: 40px;
