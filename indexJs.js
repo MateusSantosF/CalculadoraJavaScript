@@ -6,7 +6,7 @@ function calcular(valor){
 }
 
 function limpar(){
-    document.getElementById('display').value = '';
+    document.getElementById('display').value = '0';
 }
 function resultado(){
     //eval = Função nativa que interpreta uma string como uma função javascript
