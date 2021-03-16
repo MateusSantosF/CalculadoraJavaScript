@@ -1,51 +1,48 @@
 body{
     margin: 0 auto;
     padding: 0 auto;
-    background-color: rgba(207,207,207,1);
+    background-color: #f0f1f5;
 }
 
 .calculadora{
-    width: 370px;
-    height: 470px;
+    width: 320px;
+    height: 510px;
     margin: 0 auto;
     margin-top: 30px;
-    border: 1px solid black;
-    border-radius: 30px;
-    background-color: rgba(34,33,33,1);
-  
+    background-color: white;
+    box-shadow: 1px 0px 10px 1px rgba(0,0,0,0.2);
+}
 
-}
-#display{
-    font-size: 23px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif
-}
 .display{
-    width: 70%;
-    height: 40px;
+    width: 320px;
+    height: 150px;
     margin: 0 auto;
-    margin-top: 30px;
 }
 .calculadora input{
-    width: 100%;
-    height: 40px;
-    border-radius: 5px;
-    border: 2px solid black;
-    background-color: rgba(247,247,247,1);
+    text-align: right;
+    padding-right: 30px;
+    width: 288px;
+    height:100%;
+    font-size: 32px;
+    outline: 0px;
+    border: 0;
+    background-color: white;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
 }
 .botoes{
+    border-collapse: collapse;
     margin: 0 auto;
     margin-top: 20px;
-    width: 350px;
+    width: 320px;
 }
+
 button{
-    color: white;
-    background-color: #353434;
-    box-shadow: 0.5px 1px 0.5px 0.5px black;
+    color:rgba(77, 77, 77, 0.8);
+    background-color: white;
     float: left;
     margin: 0 auto;
-    border-radius: 10px;
     border: none;
-    width: 75px;
+    width: 73px;
     height: 60px;
     margin: 2px;
     font-size: 18px;
@@ -53,20 +50,34 @@ button{
     cursor: pointer;
 }
 button:hover{
-    background-color: rgba(20,19,19,1);
+    background-color: rgb(236, 236, 236);
 }
 button:focus{
     outline-style: none;
     border: none;
     outline: none;
 }
-
-#limpar{
-    width: 160px;
+.rodape{
+    padding-top: 30px;
+    background-color:#5f5e70;
 }
-#zero{
-    width: 160px;
+.rodape button{
+    color: white;
+    background-color: #5f5e70;
 }
 #igual{
-    height: 140px;
+    transform: scale(1.1);
+    color: white;
+    height: 70px;
+    background-color: #ff5068;
 }
+
+#limpar{
+    text-align: left;
+    padding-left:60px;
+    width: 230px;
+}
+#zero{
+    width: 100px;
+}
+

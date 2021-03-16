@@ -12,13 +12,13 @@
 
     <div class="calculadora">
         <div class="display">
-            <input id="display" type="text" disabled>
+            <input id="display" value="0" type="text" disabled>
         </div>
         <table class="botoes">
            <tr>
-             <td colspan="2"><button type="button" id="limpar" onclick="limpar()">C</button></td>
-             <td><button type="button" onclick="calcular('/')">/</button></td>
-             <td><button type="button" onclick="calcular('*')">x</button></td>
+             <td colspan="3"><button type="button" id="limpar" onclick="limpar()">C</button></td>
+            
+             <td><button type="button" onclick="calcular('+')">+</button></td>
            </tr>
 
            <tr>
@@ -32,19 +32,22 @@
             <td><button type="button" onclick="calcular('4')">4</button></td>
             <td><button type="button" onclick="calcular('5')">5</button></td>
             <td><button type="button" onclick="calcular('6')">6</button></td>
-            <td><button type="button" onclick="calcular('+')">+</button></td>
+            <td><button type="button" onclick="calcular('*')">x</button></td>
+          
            </tr>
            
            <tr>
             <td><button type="button" onclick="calcular('1')">1</button></td>
             <td><button type="button" onclick="calcular('2')">2</button></td>
             <td><button type="button" onclick="calcular('3')">3</button></td>
-            <td rowspan="2"><button type="button" id="igual" onclick="resultado()">=</button></td>
+            <td><button type="button" onclick="calcular('/')">/</button></td>
+         
            </tr>
 
-           <tr>
+           <tr class="rodape">
                 <td colspan="2"><button type="button" id="zero" onclick="calcular('0')">0</button></td>
                 <td ><button type="button" onclick="calcular('.')">.</button></td>
+                <td ><button type="button" id="igual" onclick="resultado()">=</button></td>
            </tr>
         </table>
     </div>
