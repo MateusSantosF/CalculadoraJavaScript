@@ -52,6 +52,7 @@ button:hover{
     background-color: rgba(20,19,19,1);
 }
 button:focus{
+    outline-style: none;
     border: none;
     outline: none;
 }
@@ -64,12 +65,4 @@ button:focus{
 }
 #igual{
     height: 140px;
-}
-
-.rodape{
-   position: relative;
-   font-size: 0.7em;
-   font-family: Verdana, Geneva, Tahoma, sans-serif;
-   top: 30px;
-   margin: 10px;
 }
