@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel = "stylesheet" href="indexCss.css">
+    <script src="indexJs.js"></script>
+    <title>Calculadora</title>
+</head>
+<body>
+
+    <div class="calculadora">
+        <div class="display">
+            <input id="display" type="text" disabled>
+        </div>
+        <table class="botoes">
+           <tr>
+             <td colspan="2"><button type="button" id="limpar" onclick="limpar()">C</button></td>
+             <td><button type="button" onclick="calcular('/')">/</button></td>
+             <td><button type="button" onclick="calcular('*')">x</button></td>
+           </tr>
+
+           <tr>
+            <td><button colspan="1" onclick="calcular('7')">7</button></td>
+            <td><button type="button" onclick="calcular('8')">8</button></td>
+            <td><button type="button" onclick="calcular('9')">9</button></td>
+            <td><button type="button" onclick="calcular('-')">-</button></td>
+           </tr>
+
+           <tr>
+            <td><button type="button" onclick="calcular('4')">4</button></td>
+            <td><button type="button" onclick="calcular('5')">5</button></td>
+            <td><button type="button" onclick="calcular('6')">6</button></td>
+            <td><button type="button" onclick="calcular('+')">+</button></td>
+           </tr>
+           
+           <tr>
+            <td><button type="button" onclick="calcular('1')">1</button></td>
+            <td><button type="button" onclick="calcular('2')">2</button></td>
+            <td><button type="button" onclick="calcular('3')">3</button></td>
+            <td rowspan="2"><button type="button" id="igual" onclick="resultado()">=</button></td>
+           </tr>
+
+           <tr>
+                <td colspan="2"><button type="button" id="zero" onclick="calcular('0')">0</button></td>
+                <td ><button type="button" onclick="calcular('.')">.</button></td>
+           </tr>
+        </div>
+    </div>
+</body>
+</html>
